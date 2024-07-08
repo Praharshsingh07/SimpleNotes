@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onDestroy() {
         dbHelper.close();
         super.onDestroy();
-    }
+    }//@Database
     public void refreshNotesList() {
         Fragment currentFragment = getSupportFragmentManager().findFragmentById(R.id.fragment_container);
         if (currentFragment instanceof NotesListFragment) {
